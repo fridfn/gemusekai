@@ -1,0 +1,75 @@
+const templateGames = document.querySelector("#games-items")
+const gamesContainer = document.querySelector("#games-container")
+
+const listGames = [
+  {
+   name: "Snake",
+   link: "preview/python/index.html",
+   image: "../../../assets/snake.png"
+  },
+  {
+   name: "Tic Tac Toe",
+   link: "preview/tictac/index.html",
+   image: "../../../assets/tictactoe.png"
+  },
+  {
+   name: "Count Masters",
+   link: "",
+   image: "../../../assets/paperrockscissors.png"
+  },
+  // tambahin data game seperti penulisan diatas
+]
+
+function toggleSearch() {
+  const searchBar = document.querySelector('.search-bar');
+  searchBar.classList.toggle('hidden');
+}
+
+function filterGames() {
+  const query = document.getElementById('searchInput').value.toLowerCase();
+  document.querySelectorAll('.game').forEach(game => {
+    const name = game.getAttribute('data-name');
+    game.style.display = name.includes(query) ? 'block' : 'none';
+  });
+}
+
+function handleListGames() {
+  listGames.forEach((items, index) => {
+    const cloneGames = templateGames.content.cloneNode(true)
+    const img = cloneGames.querySelector(".game-img")
+    const name = cloneGames.querySelector(".game-name")
+    const gameItems = cloneGames.querySelector(".items-games")
+     
+     img.src = items.image
+     img.alt = items.name
+     name.textContent = items.name
+     gameItems.setAttribute("data-aos-delay", index * 200)
+     
+     gamesContainer.appendChild(cloneGames)
+  })
+}
+
+function toggleSearch() {
+  document.querySelector(".search-bar").classList.toggle("hidden");
+}
+
+function filterGames() {
+  const input = document.getElementById("searchInput").value.toLowerCase();
+  const games = document.querySelectorAll(".items-games");
+
+  games.forEach(game => {
+    const name = game.querySelector(".game-name").textContent.toLowerCase();
+    if (name.includes(input)) {
+      game.style.display = "block";
+    } else {
+      game.style.display = "none";
+    }
+  });
+}
+
+handleListGames()
+handleListGames()
+handleListGames()
+handleListGames()
+handleListGames()
+handleListGames()
