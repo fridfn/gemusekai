@@ -44,8 +44,8 @@ function play(playerChoice) {
   elementChoice.forEach((items) => items.classList.add("suit-hand"))
   
   setTimeout(() => {
-    computerChoiceElement.src = `assets/${handsChoice[computerChoice]}`
-    playerChoiceElement.src = `assets/${handsChoice[playerChoice]}`
+    computerChoiceElement.src = `/play/roshambo/preview/game/assets/${handsChoice[computerChoice]}`
+    playerChoiceElement.src = `/play/roshambo/preview/game/assets/${handsChoice[playerChoice]}`
     
     document.getElementById("result").textContent = result;
     elementChoice.forEach((items) => items.classList.remove("suit-hand"))
@@ -57,7 +57,7 @@ function play(playerChoice) {
 }
 
 function reset() {
-  [computerChoiceElement, playerChoiceElement].forEach(items => items.src = "assets/rock.svg")
+  [computerChoiceElement, playerChoiceElement].forEach(items => items.src = "/play/roshambo/preview/game/assets/rock.svg")
   
   choicesArena.classList.remove("arena")
   choicesBattle.classList.remove("battle")

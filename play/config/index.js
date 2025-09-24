@@ -4,18 +4,23 @@ const gamesContainer = document.querySelector("#games-container")
 const listGames = [
   {
    name: "Snake",
-   link: "preview/python/index.html",
-   image: "../../../assets/snake.png"
+   link: "play/snake/preview/index.html",
+   image: "assets/snake.png"
   },
   {
    name: "Tic Tac Toe",
-   link: "preview/tictac/index.html",
-   image: "../../../assets/tictactoe.png"
+   link: "play/tictactoe/preview/index.html",
+   image: "assets/tictactoe.png"
   },
   {
-   name: "Count Masters",
-   link: "",
-   image: "../../../assets/paperrockscissors.png"
+   name: "Paper Rock Scissors",
+   link: "play/roshambo/preview/index.html",
+   image: "assets/paperrockscissors.png"
+  },
+  {
+   name: "Ping Pong",
+   link: "play/pingpong/preview/index.html",
+   image: "assets/pingpong.png"
   },
   // tambahin data game seperti penulisan diatas
 ]
@@ -40,10 +45,14 @@ function handleListGames() {
     const name = cloneGames.querySelector(".game-name")
     const gameItems = cloneGames.querySelector(".items-games")
      
-     img.src = items.image
      img.alt = items.name
      name.textContent = items.name
+     img.src = "../../../" + items.image
      gameItems.setAttribute("data-aos-delay", index * 200)
+     gameItems.addEventListener("click", () => {
+       window.location.href = "../../../" + items.link
+     })
+
      
      gamesContainer.appendChild(cloneGames)
   })

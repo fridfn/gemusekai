@@ -10,6 +10,7 @@
 * {
  padding: 0;
  margin: 0;
+ user-select: none;
  box-sizing: border-box;
 }
 
@@ -155,10 +156,23 @@ ion-icon {
  justify-content: center;
 }
 
+#games-container {
+ align-items: start!important;
+ justify-content: space-between!important;
+}
+
 .items-games {
  font-size: 14px;
  font-weight: 500;
  flex-direction: column;
+ min-width: 85px!important;
+ max-width: 85px!important;
+ min-height: 105px!important;
+}
+
+.items-games .game-name {
+ max-width: 90px;
+ text-align: center;
 }
 
 .header-icons .primary-icon {

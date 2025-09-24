@@ -23,15 +23,15 @@
      <div class="main">
       <div class="background-main">
        <div class="shadow"></div>
-       <img src="../../../assets/paperrockscissors.png" alt="Rock Scisors Paper">
+       <img id="banner-game"  alt="Rock Scisors Paper">
       </div>
       <div class="wrapper-main">
        <div class="main-image">
-        <img src="../../../assets/paperrockscissors.png" alt="Rock Scisors Paper">
+        <img id="banner-game"  alt="Rock Scisors Paper">
        </div>
        <div class="wrapper-info">
          <h1>Rock Scisors Paper</h1>
-         <a href="game/index.html" class="play-btn">
+         <a onclick="playGame()" class="play-btn">
           <ion-icon name="game-controller-sharp" class="icon"></ion-icon>
           Main sekarang
          </a>
@@ -63,6 +63,15 @@
     once: true,
     offset: 90
    })
+   
+   const bannerGame = document.querySelectorAll("#banner-game")
+   
+   bannerGame.forEach((items) => items.src = "../../../assets/paperrockscissors.png")
+   
+   function playGame() {
+    window.location.href =
+      "/play/roshambo/preview/game/index.html"
+   }
   </script>
 </body>
 </html>
