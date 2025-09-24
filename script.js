@@ -34,10 +34,10 @@ function handleListGames() {
     
      img.alt = items.name
      name.textContent = items.name
-     img.src = "../../../" + items.image
+     img.src = "../../" + items.image
      gameItems.setAttribute("data-aos-delay", index * 200)
      gameItems.addEventListener("click", () => {
-       window.location.href = "../../../" + items.link
+       window.location.href = "../../" + items.link
      })
 
      
