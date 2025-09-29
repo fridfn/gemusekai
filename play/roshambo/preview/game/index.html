@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+  <h2>Rock Paper Scissors</h2>
+  <div class="game-container">
+   <section class="choices-arena">
+    <p class="title">Select your choices</p>
+    <div class="choices-container">
+      <div class="choice" onclick="play('rock')">
+      <div class="choice-box">
+        <img src="assets/rock.svg" class="icons" />
+       </div>
+       <p class="name">Rock</p>
+      </div>
+      <div class="choice" onclick="play('scissors')">
+      <div class="choice-box">
+        <img src="assets/scissors.svg" class="icons scissors" />
+       </div>
+       <p class="name">Scissors</p>
+      </div>
+      <div class="choice" onclick="play('paper')">
+      <div class="choice-box">
+        <img src="assets/paper.svg" class="icons scissors" />
+       </div>
+       <p class="name">Paper</p>
+      </div>
+    </div>
+   </section>
+   <section class="choices-battle">
+    <div class="wrapper-vs">
+     <p class="name">Player</p>
+     <p class="name">Computer</p>
+    </div>
+    <div class="choices-container">
+     <div 
+       class="choice"
+       data-aos="fade-right"
+       id="player-choice">
+      <div class="choice-box">
+         <img src="assets/rock.svg" class="icons" />
+       </div>
+      </div>
+     <div 
+      class="choice"
+      data-aos="fade-left"
+      id="computer-choice">
+      <div class="choice-box flip">
+         <img src="assets/rock.svg" class="icons" />
+       </div>
+      </div>
+    </div>
+    <div class="result" id="result"></div>
+    <button onClick="reset()">Restart</button>
+   </section>
+   <div class="scoreboard">
+     <div>Won: <span id="won">0</span></div>
+     <div>Lost: <span id="lost">0</span></div>
+     <div>Draw: <span id="draw">0</span></div>
+   </div>
+  </div>
+  <script src="main.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: white;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #141414;
+}
+
+.logo {
+  font-size: 22px;
+  width: 100px;
+  font-weight: bold;
+}
+.logo span {
+  color: #9d79f2;
+}
+
+nav {
+  gap: .5rem;
+  display: flex;
+  align-items: center;
+  min-height: 2rem!important;
+  flex-direction: row!important;
+}
+
+nav input {
+  display: flex; /* default hidden */
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 200px;
+  padding: .5rem 1rem;
+  color: whitesmoke;
+  visibility: hidden;
+  background-color: #363636;
+  transition: all 0.3s ease;
+}
+nav input.active {
+  visibility: visible; /* muncul saat aktif */
+}
+.wrapper-icons {
+ display: flex;
+ gap: 10px;
+ transform: scale(.8);
+}
+.icon {
+  font-size: 22px;
+  cursor: pointer;
+  width: 23px;
+  height: 23px;
+  padding: .5em;
+  border-radius: 50%;
+  background-color: #363636;
+}
+
+/* Recommended */
+.recommended {
+  margin: 20px;
+}
+.recommended h2 {
+  margin-bottom: 15px;
+}
+
+/* Grid Game */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.game-card {
+  background: #1c1c1c;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.game-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  max-height: 100px;
+  min-height: 100px;
+}
+.game-card p {
+  font-size: 14px;
+}

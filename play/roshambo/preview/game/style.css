@@ -1,0 +1,121 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: Arial, sans-serif;
+ background: #0f172a;
+ color: #fff;
+ text-align: center;
+ padding: 25px;
+ height: 100vh;
+}
+h2 { margin-bottom: 20px; }
+.game-container {
+ height: 50vh;
+ overflow-x: hidden;
+}
+.choices-container {
+ display: flex;
+ gap: 20px;
+ width: 100%;
+ margin-bottom: 30px;
+ justify-content: space-between;
+}
+.choice, .choice-box, .game-container, .wrapper-vs {
+ gap: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+.choice-box {
+ padding: 20px;
+ border-radius: 12px;
+ cursor: pointer;
+ transition: 0.2s;
+ position: relative;
+ height: 5rem;
+ width: 5rem;
+}
+.choice-box:hover {
+ background: #334155;
+}
+.choice-box .icons {
+position: absolute;
+width: 68%;
+object-fit: contain;
+}
+.title {
+font-weight: bolder;
+}
+.choice-box .icons.scissors {
+transform: rotate(75deg);
+}
+.result {
+ margin-top: 20px;
+ font-size: 18px;
+}
+.hands {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 30px;
+ margin: 20px 0;
+ font-size: 60px;
+}
+.scoreboard {
+ display: flex;
+ justify-content: center;
+ gap: 40px;
+ color: #7e7676;
+}
+.choices-arena.arena, .choices-battle {
+ display: none;
+}
+.choices-battle.battle {
+ display: block;
+}
+.choices-arena, .choices-battle {
+ width: 100%;
+}
+
+.choices-battle .choices-container {
+ margin-top: 25px;
+}
+.choices-battle .choices-container .choice .choice-box {
+ width: 8.5rem;
+ height: 8.5rem;
+}
+
+.wrapper-vs {
+ margin: 0 15px 0 30px;
+ flex-direction: row!important;
+ justify-content: space-between;
+}
+.wrapper-vs .name {
+ font-weight: bolder;
+}
+.wrapper-vs:before {
+ content: "v/s";
+ left: 46%;
+ position: absolute;
+ color: #7e7676;
+ font-weight: bolder;
+}
+
+.choice-box.flip {
+ transform: scaleX(-1);
+}
+@keyframes swing-suit {
+ 0%   { transform: translateY(-50px); }
+ 25%  { transform: translateY(0); }
+ 50%  { transform: translateY(-30px); }
+ 75%  { transform: translateY(0); }
+ 100% { transform: translateY(20px); }
+}
+.suit-hand {
+ display: inline-block;
+ animation: swing-suit 3s ease-in-out;
+}
