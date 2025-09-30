@@ -13,42 +13,61 @@
   <header>
     <div class="logo">Gemu <span>Sekai</span></div>
     <nav>
-      <input type="text" data-aos="fade-in"
-        data-aos-delay="200" placeholder="Search...">
+      <input type="text" data-aos="fade-in" data-aos-delay="200" placeholder="Search...">
       <div class="wrapper-icons">
         <ion-icon class="icon" name="search"></ion-icon>
       </div>
     </nav>
   </header>
+
   <section class="recommended">
     <h2>Recommended</h2>
     <div class="game-grid">
       <template class="template-cards-game">
-       <div
-        data-aos="zoom-in-down"
-        data-aos-delay="200"
-        class="game-card">
+       <div data-aos="zoom-in-down" data-aos-delay="200" class="game-card">
          <img class="game-img" src="assets/paperrockscissors.png" alt="Rock Paper Scissors">
          <p class="game-name">Rock Paper Scissors</p>
        </div>
       </template>
     </div>
   </section>
+
+  <!-- Container iklan -->
+  <div id="ad-container" style="margin:20px 0; text-align:center;"></div>
+
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js" type="text/javascript"></script>
-  <script>javascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function ()
-  {eruda.init() } })();</script>
-  <script type="text/javascript">
-  	atOptions = {
-  		'key' : '60b0cc90ff1988819893a6c71d036a03',
-  		'format' : 'iframe',
-  		'height' : 300,
-  		'width' : 160,
-  		'params' : {}
-  	};
+
+  <!-- eruda debugger (buat cek error di mobile) -->
+  <script>
+    (function () {
+      var script = document.createElement('script');
+      script.src = "//cdn.jsdelivr.net/npm/eruda";
+      document.body.appendChild(script);
+      script.onload = function () { eruda.init() }
+    })();
   </script>
-  <script async data-cfasync="false" type="text/javascript" src="https://www.highperformanceformat.com/60b0cc90ff1988819893a6c71d036a03/invoke.js"></script>
+
+  <!-- Script iklan -->
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '60b0cc90ff1988819893a6c71d036a03',
+      'format' : 'iframe',
+      'height' : 300,
+      'width' : 160,
+      'params' : {}
+    };
+    // taruh iklan di dalam container
+    document.addEventListener("DOMContentLoaded", () => {
+      var adScript = document.createElement("script");
+      adScript.async = true;
+      adScript.setAttribute("data-cfasync", "false");
+      adScript.src = "https://www.highperformanceformat.com/60b0cc90ff1988819893a6c71d036a03/invoke.js";
+      document.getElementById("ad-container").appendChild(adScript);
+    });
+  </script>
+
   <script type="text/javascript">AOS.init({ once: true })</script>
 </body>
 </html>
