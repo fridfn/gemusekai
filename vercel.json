@@ -1,5 +1,4 @@
 {
-  "framework": "null",
   "headers": [
     {
       "source": "/(.*)",
