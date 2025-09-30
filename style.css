@@ -82,6 +82,7 @@ nav input.active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+  padding-bottom: 5rem;
 }
 .game-card {
   background: #1c1c1c;
