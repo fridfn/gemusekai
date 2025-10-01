@@ -1,0 +1,23 @@
+{
+  "name": "gamusekai",
+  "version": "1.0.0",
+  "description": "a website developed together with @gemusekai",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fridfn/gamusekai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fridfn/gamusekai/issues"
+  },
+  "homepage": "https://github.com/fridfn/gamusekai#readme",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
