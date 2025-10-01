@@ -9,7 +9,6 @@
 - [Games](#games)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
-- [Installation](#installation)
 - [Development](#development)
 - [Configuration](#configuration)
 - [Contributing](#contributing)
@@ -131,37 +130,6 @@ gemusekai/
                 ├── index.html
                 ├── main.js
                 └── style.css
-```
-
-## 🚀 Installation
-
-### Prerequisites
-- Node.js (v12 or higher)
-- npm or yarn
-
-### Steps
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/fridfn/gemusekai.git
-cd gemusekai
-```
-
-2. **Install dependencies**
-```bash
-npm install
-```
-
-3. **Start development server**
-```bash
-npm start
-# or
-npx live-server
-```
-
-4. **Open in browser**
-```
-http://localhost:8080
 ```
 
 ## 💻 Development
