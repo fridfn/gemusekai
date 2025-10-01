@@ -57,3 +57,13 @@ button {
   border-radius: 10px;
   margin: 5px;
 }
+
+.container header {
+ width: 100%;
+ position: absolute;
+ left: 0!important;
+}
+
+.wrapper .logo, .icons-back {
+ font-size: 3.5rem;
+}

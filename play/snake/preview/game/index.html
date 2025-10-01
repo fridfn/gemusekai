@@ -3,12 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Snake Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../../config/style.css"/>
 </head>
 <body>
   <h1>Snake Game</h1>
   <div id="score">Score: 0</div>
   <canvas id="game" width="400" height="400"></canvas>
+  <header>
+    <span class="wrapper">
+      <ion-icon name="arrow-back" onclick="window.location.href = '/play/snake/preview/'"></ion-icon>
+      <div class="logo">
+        Gemu Sekai
+      </div>
+    </span>
+   </header>
   <div class="controls">
     <button onclick="move('up')">▲</button><br>
     <button onclick="move('left')">◀</button>
@@ -16,6 +26,25 @@
     <button onclick="move('right')">▶</button><br>
     <button onclick="move('down')">▼</button>
   </div>
+  <div class="ad-wrapper" id="ad-wrapper-1" style=" 
+      position: static!important;
+      bottom: .5rem;
+      left: calc(100% - 92%);
+    ">
+    <script type="text/javascript">
+      window.atOptions = {
+        key: '556c794901fdab1db79b6639d8342d32',
+        format: 'iframe',
+        height: 50,
+        width: 320,
+        params: {}
+      };
+    </script>
+    <script type="text/javascript" async data-cfasync="false" 
+      src="https://www.highperformanceformat.com/556c794901fdab1db79b6639d8342d32/invoke.js">
+    </script>
+  </div>
   <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>

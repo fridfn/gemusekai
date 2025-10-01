@@ -5,6 +5,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <link rel="stylesheet" href="style.css"/>
+ <link rel="stylesheet" href="../../../config/style.css"/>
  <title>Tic Tac Toe</title>
 </head>
 <body>
@@ -13,6 +14,14 @@
       <p id="msg">let's Play the Game</p>
  </div>
  <div class="container">
+   <header>
+    <span class="wrapper">
+      <ion-icon name="arrow-back" onclick="window.location.href = '/play/tictactoe/preview/'"></ion-icon>
+      <div class="logo">
+        Gemu Sekai
+      </div>
+    </span>
+   </header>
    <div class="game">
         <button class="box"></button>
         <button class="box"></button>
@@ -29,6 +38,25 @@
     </div>
  </div> 
  <button id="restart">Restart</button>
+ <div class="ad-wrapper" id="ad-wrapper-1" style=" 
+      position: fixed!important;
+      bottom: .5rem;
+      left: calc(100% - 92%);
+    ">
+    <script type="text/javascript">
+      window.atOptions = {
+        key: '556c794901fdab1db79b6639d8342d32',
+        format: 'iframe',
+        height: 50,
+        width: 320,
+        params: {}
+      };
+    </script>
+    <script type="text/javascript" async data-cfasync="false" 
+      src="https://www.highperformanceformat.com/556c794901fdab1db79b6639d8342d32/invoke.js">
+    </script>
+  </div>
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
  <script src="scriptGame.js"></script>
 </body>
 </html>
