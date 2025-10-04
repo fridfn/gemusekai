@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Scramble Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../../config/style.css"/>
+</head>
+<body>
+  <div class="game-box-scramble">
+  <header>
+    <span class="wrapper">
+      <ion-icon class="icons-back" name="arrow-back" onclick="window.location.href = '/play/pingpong/preview/'"></ion-icon>
+      <div class="logo">
+        Gemu Sekai
+      </div>
+    </span>
+   </header>
+    <h2>Word Scramble</h2>
+    <div class="scramble" id="scrambleWord">------</div>
+    <div class="hint" id="hintText">Hint goes here</div>
+    <div class="timer" id="timer">Time Left: 30s</div>
+    
+    <input type="text" id="userInput" placeholder="Enter a valid word">
+    <div>
+      <button class="refresh" onclick="initGame()">Refresh Word</button>
+      <button class="check" onclick="checkWord()">Check Word</button>
+    </div>
+    <div class="message" id="message"></div>
+  </div>
+  <div class="ad-wrapper" id="ad-wrapper-1" style=" 
+      position: fixed!important;
+      bottom: .5rem;
+      left: calc(100% - 92%);
+    ">
+    <script type="text/javascript">
+      window.atOptions = {
+        key: '556c794901fdab1db79b6639d8342d32',
+        format: 'iframe',
+        height: 50,
+        width: 320,
+        params: {}
+      };
+    </script>
+    <script type="text/javascript" async data-cfasync="false" 
+      src="https://www.highperformanceformat.com/556c794901fdab1db79b6639d8342d32/invoke.js">
+    </script>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script src="main.js" type="text/javascript"></script>
+</body>
+</html>

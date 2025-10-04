@@ -1,0 +1,89 @@
+
+* {
+ padding: 0;
+ margin: 0;
+ user-select: none;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: Arial, sans-serif;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+ background: #3b82f6!important;
+ margin: 0;
+}
+
+.game-box-scramble {
+ background: white!important;
+ padding: 25px;
+ border-radius: 12px;
+ box-shadow: 0 4px 10px rgba(0,0,0,0.15)!important;
+ text-align: center;
+ width: 350px;
+}
+
+.game-box-scramble header {
+ background: #0e2a58!important;
+ left: 0px;
+}
+
+h2 {
+ margin-bottom: 15px;
+ color: #333!important;
+}
+
+.scramble {
+ font-size: 22px;
+ letter-spacing: 8px;
+ margin: 15px 0;
+ font-weight: bold;
+}
+
+.hint {
+ font-size: 14px;
+ color: #555!important;
+ margin-bottom: 10px;
+}
+
+.timer {
+ margin-bottom: 15px;
+ font-weight: bold;
+ color: #d32f2f!important;
+}
+
+input {
+ width: 100%!important;
+ padding: 8px!important;
+ font-size: 16px!important;
+ border: 2px solid #ccc!important;
+ border-radius: 6px!important;
+ margin-bottom: 12px!important;
+ background-color: transparent!important;
+}
+
+button {
+ padding: 10px 14px!important;
+ border: none!important;
+ border-radius: 8px!important;
+ font-size: 15px!important;
+ margin: 5px!important;
+ cursor: pointer!important;
+}
+
+.refresh {
+ background: #6b7280!important;
+ color: white!important;
+}
+
+.check {
+ background: #2563eb!important;
+ color: white!important;
+}
+
+.message {
+ margin-top: 12px;
+ font-weight: bold;
+}

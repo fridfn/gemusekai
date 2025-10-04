@@ -22,6 +22,16 @@ const listGames = [
    link: "play/pingpong/preview/index.html",
    image: "assets/pingpong.png"
   },
+  {
+   name: "Brick Breaker",
+   link: "play/brickbreaker/preview/index.html",
+   image: "assets/brickbreaker.png"
+  },
+  {
+   name: "Word Scramble",
+   link: "play/wordscramble/preview/index.html",
+   image: "assets/wordscramble.png"
+  },
   // tambahin data game seperti penulisan diatas
 ]
 
