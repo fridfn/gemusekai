@@ -5,6 +5,14 @@ const words = [
  { word: "computer", hint: "An electronic device for processing data" },
  { word: "internet", hint: "A global network of computers" },
  { word: "keyboard", hint: "Device used for typing" },
+ { word: "laptop", hint: "A small electronic computer that can be carried around" },
+ { word: "phone", hint: "A device used to make calls and send messages" },
+ { word: "mouse", hint: "A device used to move the cursor on a screen" },
+ { word: "television", hint: "A device that receives broadcast signals for TV" },
+ { word: "printer", hint: "A device used to produce paper copies" },
+ { word: "tablet", hint: "A flat touchscreen device" },
+ { word: "camera", hint: "A device used to take pictures" },
+ { word: "router", hint: "A device that connects devices to the internet" },
 ];
 
 let correctWord, timer;
@@ -23,6 +31,7 @@ function initGame() {
    let j = Math.floor(Math.random() * (i + 1));
    [wordArray[i], wordArray[j]] = [wordArray[j], wordArray[i]];
  }
+ 
  scrambleWord.innerText = wordArray.join(" ");
  hintText.innerText = "Hint: " + randomObj.hint;
  correctWord = randomObj.word.toLowerCase();
