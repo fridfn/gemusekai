@@ -60,10 +60,10 @@ button {
 
 .container header {
  width: 100%;
- position: absolute;
  left: 0!important;
+ position: absolute;
 }
 
 .wrapper .logo, .icons-back {
- font-size: 3.5rem;
+ font-size: 1rem;
 }
